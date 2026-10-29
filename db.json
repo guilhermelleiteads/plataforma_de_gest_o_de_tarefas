@@ -1,0 +1,67 @@
+{
+  "workspaces": [
+    {
+      "id": "ws-1",
+      "name": "Produto & Engenharia",
+      "projects": [
+        { "id": "proj-1", "name": "Lançamento V2.0", "icon": "🚀" },
+        { "id": "proj-2", "name": "Refatoração do Core", "icon": "⚡" }
+      ]
+    },
+    {
+      "id": "ws-2",
+      "name": "Marketing & Growth",
+      "projects": [
+        { "id": "proj-3", "name": "Campanha Q3", "icon": "📈" }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "projectId": "proj-1",
+      "title": "Desenvolver novo sistema de autenticação",
+      "description": "Implementar login social e autenticação baseada em JWT com refresh token seguro.",
+      "status": "em_andamento",
+      "priority": "urgente",
+      "dueDate": "2026-06-15",
+      "assignee": "Carlos Silva",
+      "tags": ["Backend", "Segurança"],
+      "checklist": [
+        { "id": "cl-1", "text": "Configurar provedores OAuth", "completed": true },
+        { "id": "cl-2", "text": "Criar rotas de Refresh Token", "completed": false },
+        { "id": "cl-3", "text": "Testes unitários de auth", "completed": false }
+      ]
+    },
+    {
+      "id": "task-2",
+      "projectId": "proj-1",
+      "title": "Redesenhar tela de checkout",
+      "description": "Atualizar os componentes visuais para o novo Design System com Tailwind CSS.",
+      "status": "a_fazer",
+      "priority": "alta",
+      "dueDate": "2026-06-20",
+      "assignee": "Mariana Souza",
+      "tags": ["Frontend", "UI/UX"],
+      "checklist": [
+        { "id": "cl-4", "text": "Criar wireframes no Figma", "completed": true },
+        { "id": "cl-5", "text": "Implementar componentes responsivos", "completed": false }
+      ]
+    },
+    {
+      "id": "task-3",
+      "projectId": "proj-1",
+      "title": "Revisão de segurança de dados (LGPD)",
+      "description": "Garantir criptografia de ponta e política de exclusão de dados dos usuários ativos.",
+      "status": "concluido",
+      "priority": "media",
+      "dueDate": "2026-06-01",
+      "assignee": "Ana Paula",
+      "tags": ["Legal", "Segurança"],
+      "checklist": [
+        { "id": "cl-6", "text": "Mapeamento de dados sensíveis", "completed": true },
+        { "id": "cl-7", "text": "Atualizar termos de uso", "completed": true }
+      ]
+    }
+  ]
+}
